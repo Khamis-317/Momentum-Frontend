@@ -69,7 +69,7 @@ export default function LoginForm() {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="bg-white rounded-2xl w-full max-w-md p-10 transition-all duration-300">
+      <div className="bg-white w-full max-w-md p-10">
         <div className="text-center mb-10">
           <h1 className="text-2xl font-bold text-gray-800 mb-2">
             Welcome Back!
