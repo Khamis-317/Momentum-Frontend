@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Eye, EyeOff, Mail, Lock, User, Map, Loader2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function SignupForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ export default function SignupForm() {
     confirmPassword: "",
   });
 
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -367,6 +369,7 @@ export default function SignupForm() {
             type="button"
             className="w-full py-3 bg-white text-gray-700 rounded-xl font-semibold border border-blue-500 hover:bg-gray-50 transform hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
             disabled={isLoading}
+            onClick={() => navigate("/signup-mentor")}
           >
             Sign Up as Mentor
           </button>

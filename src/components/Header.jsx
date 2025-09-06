@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 py-3 border-b border-transparent
+      className={`fixed top-0 left-0 w-full border-b-gray-200 bg-white bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 py-3 border-b border-transparent
       }`}
     >
       <div className="flex justify-between items-center max-w-[1800px] mx-auto px-5">
