@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage"
+import SignupPage from "./pages/SignupPage";
 import Homepage from "./pages/Homepage";
-import SignupAsMentorPage from "./pages/SignupAsMentorPage"
+import SignupAsMentorPage from "./pages/SignupAsMentorPage";
+import ChatbotPage from "./pages/ChatbotPage"
 // import AdminDashboardPage from "./pages/AdminDashboardPage";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/signup-mentor" element={<SignupAsMentorPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/chatbot" element={<ChatbotPage />} />
       </Routes>
       {/* <Routes>
         <Route path="/admin/dashboard" element={<AdminDashboardPage />} />

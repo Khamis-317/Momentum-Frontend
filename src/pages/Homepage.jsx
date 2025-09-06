@@ -4,7 +4,7 @@ import MainHome from "../components/MainHome";
 
 export default function Homepage() {
   return (
-    <div className="grid grid-rows-[80px_1fr] grid-cols-[20%_1fr] h-full">
+    <div className="grid grid-rows-[100px_1fr] grid-cols-[20%_1fr] h-full">
       {/* Header */}
       <header className="col-span-2 fixed w-full top-0 z-10">
         <Header />
